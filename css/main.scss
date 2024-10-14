@@ -1,0 +1,10 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import '../_sass/base', '../_sass/layout', '../_sass/syntax-highlighting';
+
+// Additional custom styles can go here
+body {
+  background-color: #f8f9fa;
+}
