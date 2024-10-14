@@ -5,7 +5,8 @@
   
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="preload" href="{{ site.baseurl }}/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"></noscript>
     <link
       rel="canonical"
       href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
